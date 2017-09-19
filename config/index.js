@@ -28,23 +28,6 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/apis': {
-        // 测试代理
-        target: 'http://jsonplaceholder.typicode.com',  // 接口域名
-        changeOrigin: true,  //是否跨域
-        pathRewrite: {
-            '^/apis': ''   //需要rewrite重写的,
-        }
-      },
-      '/ubtrip': {
-        // 后台测试站点
-        target: 'http://ubtrip.eatuo.com:8888/api/MobileV4',  // 接口域名
-        changeOrigin: true,  //是否跨域
-        pathRewrite: {
-            '^/ubtrip': ''   //需要rewrite重写的,
-        }
-      }
-
     },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README

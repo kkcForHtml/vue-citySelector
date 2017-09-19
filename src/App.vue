@@ -1,37 +1,12 @@
 <template>
     <div id="app">
-        <transition :name="transitionName">
-            <router-view>123123</router-view>
-        </transition>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'app',
-    data() {
-        return {
-            transitionName: ""
-        }
-    },
-    watch: {
-        // 监视路由，参数为要目标路由和当前页面的路由
-        $route(to, from) {
-            console.log(to);
-            this.$indicator.close();
-            if (to.params.showTransition==='none') {
-                this.transitionName = "";
-            }else if(to.params.showTransition==='go'){
-                this.transitionName = 'slide'
-            }else if(to.params.showTransition==='back'){
-                this.transitionName = 'slide_back'
-            }else{
-                const toDepth = to.path.substring(0, to.path.length - 2).split('/').length
-                const fromDepth = from.path.substring(0, from.path.length - 2).split('/').length
-                this.transitionName = toDepth === fromDepth ? '' : toDepth < fromDepth ? 'slide_back' : 'slide';
-            }
-        }
-    }
+    name: 'app'
 }
 </script>
 

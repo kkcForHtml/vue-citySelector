@@ -47,7 +47,7 @@ export default {
         }
     },
     computed: {
-        ...mapState('base',['targetCity', 'startCity', 'endCity']),
+        ...mapState('base',['startCity', 'endCity']),
         resolveCityData(){
            let ob = {}
             this.Cdata.Cities.reverse().forEach((cities)=>{
