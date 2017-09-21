@@ -1,0 +1,100 @@
+@import './base';
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    color: $base-font-color;
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+}
+.main-view {
+    position: absolute;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+
+//改变mintui 原始样式
+.mint-indicator-wrapper {
+    position: absolute;
+}
+.city-view{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+.mint-header{
+    z-index: 99;
+}
+.mint-indexlist-content
+,.mint-search-list{
+    -webkit-overflow-scrolling: touch;
+}
+.mint-msgbox{
+    width: 9.4444rem /* 1020/108 */;
+    border-radius: 6px;
+    .mint-msgbox-header{
+        padding: 0;
+        line-height: .8333rem; /* 90/108 */
+        background: $base-color;
+        .mint-msgbox-title{
+            color: #fff;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+    }
+    .mint-msgbox-content{
+        margin: 0 auto;
+        width: 96%;
+        padding-top: .5741rem /* 62/108 */;
+        padding-bottom: .5741rem /* 62/108 */;
+        border-bottom: $base-border;
+        .mint-msgbox-message{
+            color: $base-font-color;
+        }
+    }
+    .mint-msgbox-btns{
+        height: 1.0741rem /* 116/108 */;
+        line-height: 1.0741rem /* 116/108 */;
+        .mint-msgbox-btn{
+            line-height: 1.0741rem /* 116/108 */;
+        }
+    }
+}
+.mint-indexlist-nav{
+    background: transparent;
+    border-left: none;
+    .mint-indexlist-navitem{
+        font-size: 14px;
+    }
+}
+
+.mint-search{
+    height: 1.1481rem /* 124/108 */;
+}
+.mint-searchbar{
+    background-color: $base-color;
+    height: 100%;
+    padding-left: 1.1481rem /* 124/108 */;
+    z-index: 100;
+}
+.mint-searchbar-cancel{
+    color: #fff;
+}
+.mint-searchbar-inner .mintui-search{
+    font-size: 18px;
+    color: #999;
+}
+.mint-search-list-warp{
+    background: #fff;
+    height: 100%;
+}
+.mint-search-list{
+    padding-top: 1.1481rem /* 124/108 */;
+    z-index: 99;
+}

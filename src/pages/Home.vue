@@ -58,6 +58,11 @@ export default {
             name: 'link',
             newVal: '/'
         })
+        this.changeStaticState({
+            name:'currentCity',
+            newVal: remote_ip_info['city']
+        })
+
 
     },
     components: {

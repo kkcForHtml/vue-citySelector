@@ -11,6 +11,7 @@ const base = {
         right: '',
         showCity: false,
         targetCity: '',
+        currentCity:'',
         startCity: '',
         endCity: '',
     },

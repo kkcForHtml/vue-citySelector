@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import './assets/css/style';
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -88,9 +89,9 @@ body {
     z-index: 99;
 }
 .mint-search-list{
-    padding-top: 84px;
+    padding-top: 40px;
 }
 .mint-search{
-    height: 44px;
+    height: 40px;
 }
 </style>

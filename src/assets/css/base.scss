@@ -1,0 +1,14 @@
+
+$base-color: #26a2ff;   //基调颜色
+$base-border: 1px solid #dfdfdf;   //边框线条
+$base-font-color: #333;         //基础文字颜色
+$base-font-fre-color: #666;     //柔化一级文字颜色
+$base-font-frefre-color: #999;  //柔化二级文字颜色
+$base-font-ss-color: #f60;  //强调类文字颜色
+$base-font-s-color: #f90;  //强调类文字颜色
+$base-btn-color: #f90;          //按钮基础颜色
+
+
+@function px2rem($px, $base-font-size: 108px) {
+    @return ($px / $base-font-size) * 1rem;
+}
